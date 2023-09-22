@@ -101,7 +101,7 @@ function App() {
   };
 
   return (
-    <div className={`wrapper ${themeClass}`}>
+    <div id="wrapper" className={`wrapper ${themeClass}`}>
       <div className="container">
         <header className="header">
           <h1 className="centered">TODO</h1>
@@ -196,15 +196,6 @@ function App() {
                   Clear-Completed-Task
                 </button>
               </div>
-            </div>
-          </section>
-
-          <section className="filter-control-for-mobile">
-            <div className="control-btn group">
-              <TodoFilterControl
-                filterStatus={filterStatus}
-                setFilterStatus={setFilterStatus}
-              />
             </div>
           </section>
         </main>
