@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import TodoFilterControl from "./components/TodoFilterControl";
-import IconCheck from "./images/icon-check.svg";
-import SwitchToDarkIcon from "./images/icon-moon.svg";
-import SwitchToLightIcon from "./images/icon-sun.svg";
+import IconCheck from "./images/check-icon.svg";
+import SwitchToDarkIcon from "./images/moon-icon.svg";
+import SwitchToLightIcon from "./images/sun-icon.svg";
 import "./App.css";
 
 const data = [
@@ -105,6 +105,9 @@ function App() {
       <div className="container">
         <header className="header">
           <h1 className="centered">TODO</h1>
+          <button className="switch-theme-btn" onClick={changeTheme}>
+            <img src={switchThemeIcon} alt="Dark Theme" />
+          </button>
         </header>
         <main>
           <div className="form-control">
